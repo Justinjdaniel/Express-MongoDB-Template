@@ -15,7 +15,7 @@ const getLinked = asyncHandler(async (req, res) => {
 // @desc    Set linked
 // @route   POST /api/linked
 // @access  Private
-const setlinked = asyncHandler(async (req, res) => {
+const setLinked = asyncHandler(async (req, res) => {
   if (!req.body.text) {
     res.status(400);
     throw new Error('Please add a text field');
@@ -56,7 +56,7 @@ const updateLinked = asyncHandler(async (req, res) => {
     new: true,
   });
 
-  res.status(200).json(updatedlinked);
+  res.status(200).json(updatedLinked);
 });
 
 // @desc    Delete linked

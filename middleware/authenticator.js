@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const asyncHandler = require('express-async-handler');
 const User = require('../models/userModel');
-const console = require ('../utils/console');
+const console = require ('../utils/console.min');
 
 const authenticator = asyncHandler(async (req, res, next) => {
   let token;

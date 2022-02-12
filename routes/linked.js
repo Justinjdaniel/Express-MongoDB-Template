@@ -4,7 +4,7 @@ const {
   setLinked,
   updateLinked,
   deleteLinked,
-} = require('../controllers/userController');
+} = require('../controllers/linkedController');
 const { authenticator } = require('../middleware/authenticator');
 
 router.route('/').get(authenticator, getLinked).post(authenticator, setLinked);
